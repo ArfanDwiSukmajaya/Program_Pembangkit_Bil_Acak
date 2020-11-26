@@ -6,13 +6,15 @@ def mixed_conqruent_method():
   m = int(input("Masukan nilai m :"))
   c = int(input("Masukan nilai c :"))
   a = int(input("Masukan nilai a :"))
-  print('====================================')
-  print('i        zi       m      a      zi+1')
-  print('====================================')
+  print('=============================================')
+  print('i        zi       m      a      zi+1     Ri+1')
+  print('=============================================')
   for x in range(jumlahBilanganAcak):
     hasil1 = (a * z0 + c) % m
-    print(x ,"\t", z0, "\t", m, "\t", a, "\t", hasil1)
+    r = hasil1 / m
+    print(x ,"\t", z0, "\t", m, "\t", a, "\t", hasil1, "\t",r )
     z0 = hasil1
+    akhir = r + r
 
   print('===================================')
 
